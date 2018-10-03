@@ -110,7 +110,7 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.mattermost.rnbeta"
+        applicationId "com.wau.chat"
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 134

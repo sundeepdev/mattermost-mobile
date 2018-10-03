@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.wau.chat;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;

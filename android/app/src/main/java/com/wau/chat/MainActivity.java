@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.wau.chat;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

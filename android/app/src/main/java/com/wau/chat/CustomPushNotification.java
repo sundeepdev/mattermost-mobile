@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.wau.chat;
 
 import android.app.PendingIntent;
 import android.content.Intent;

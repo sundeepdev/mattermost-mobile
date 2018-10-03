@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.wau.chat;
 
 import com.mattermost.share.SharePackage;
 
@@ -45,7 +45,7 @@ public class MainApplication extends NavigationApplication implements INotificat
 
   @Override
   public boolean isDebug() {
-    return BuildConfig.DEBUG;
+    return false;
   }
 
   @NonNull
