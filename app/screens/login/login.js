@@ -58,6 +58,7 @@ export default class Login extends PureComponent {
 
         this.state = {
             error: null,
+            modalVisible: false,
         };
     }
 
@@ -162,10 +163,10 @@ export default class Login extends PureComponent {
                             defaultMessage: '',
                             values: {
                                 ldapUsername: this.props.config.LdapLoginFieldName ||
-                                this.context.intl.formatMessage({
-                                    id: 'login.ldapUsernameLower',
-                                    defaultMessage: 'AD/LDAP username',
-                                }),
+                                    this.context.intl.formatMessage({
+                                        id: 'login.ldapUsernameLower',
+                                        defaultMessage: 'AD/LDAP username',
+                                    }),
                             },
                         },
                     },
@@ -305,7 +306,23 @@ export default class Login extends PureComponent {
         const {navigator, theme} = this.props;
         navigator.push({
             screen: 'ForgotPassword',
-            title: intl.formatMessage({id: 'password_form.title', defaultMessage: 'Password Reset'}),
+            title: intl.formatMessage({id: 'login.forgot', defaultMessage: 'Forgot your password'}),
+            animated: true,
+            backButtonTitle: '',
+            navigatorStyle: {
+                navBarTextColor: theme.sidebarHeaderTextColor,
+                navBarBackgroundColor: theme.sidebarHeaderBg,
+                navBarButtonColor: theme.sidebarHeaderTextColor,
+                screenBackgroundColor: theme.centerChannelBg,
+            },
+        });
+    }
+    goToCreateAccount = () => {
+        const {intl} = this.context;
+        const {theme, navigator} = this.props;
+        navigator.push({
+            screen: 'CreateAccountWebView',
+            title: intl.formatMessage({id: 'signup_user_completed.create', defaultMessage: 'Create an Account'}),
             animated: true,
             backButtonTitle: '',
             navigatorStyle: {
@@ -412,12 +429,22 @@ export default class Login extends PureComponent {
                         />
                         {proceed}
                         <Button
-                            onPress={this.forgotPassword}
+                            onPress={this.forgotPassword.bind(this)}
                             containerStyle={[style.forgotPasswordBtn]}
                         >
                             <FormattedText
                                 id='login.forgot'
                                 defaultMessage='I forgot my password'
+                                style={style.forgotPasswordTxt}
+                            />
+                        </Button>
+                        <Button
+                            onPress={this.goToCreateAccount.bind(this)}
+                            containerStyle={[style.createAccountBtn]}
+                        >
+                            <FormattedText
+                                id='login.noAccount'
+                                defaultMessage="Don't have an account?"
                                 style={style.forgotPasswordTxt}
                             />
                         </Button>
@@ -446,5 +473,10 @@ const style = StyleSheet.create({
     },
     forgotPasswordTxt: {
         color: '#2389D7',
+    },
+    createAccountBtn: {
+        borderColor: 'transparent',
+        marginTop: 15,
+        marginBottom: 30,
     },
 });

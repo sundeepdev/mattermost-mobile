@@ -88,4 +88,8 @@ ios/Pods/
 #editor-settings
 .vscodecd
 .env
+.vscode
 
+
+# build folder
+android/app/src/main/java/com/wau/
