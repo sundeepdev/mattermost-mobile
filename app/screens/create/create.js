@@ -39,7 +39,7 @@ export default class CreateAccountWebView extends PureComponent {
         return (
             <WebView
                 style={{flex: 1}}
-                source={{uri: 'https://3fd2600c.ngrok.io/signup_email'}}
+                source={{uri: 'https://wau.chat/signup_email'}}
                 scalesPageToFit={true}
                 startInLoadingState={true}
                 onMessage={this.onMessage.bind(this)}
