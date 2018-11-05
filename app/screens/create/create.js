@@ -39,7 +39,7 @@ export default class CreateAccountWebView extends PureComponent {
         return (
             <WebView
                 style={{flex: 1}}
-                source={{uri: 'https://wau.chat/signup_email'}}
+                source={{uri: 'https://app.siliconchat.co/signup_email'}}
                 scalesPageToFit={true}
                 startInLoadingState={true}
                 onMessage={this.onMessage.bind(this)}
