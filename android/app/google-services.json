@@ -1,58 +1,82 @@
 {
-    "project_info": {
-        "project_number": "87242000984",
-        "firebase_url": "https://wau-chat.firebaseio.com",
-        "project_id": "wau-chat",
-        "storage_bucket": "wau-chat.appspot.com"
-    },
-    "client": [
-        {
-            "client_info": {
-                "mobilesdk_app_id": "1:87242000984:android:c85e2a3702a47f77",
-                "android_client_info": {
-                    "package_name": "com.wau.chat"
-                }
-            },
-            "oauth_client": [
-                {
-                    "client_id": "87242000984-rrbs39b27n0oufk343e3lebnfau896tm.apps.googleusercontent.com",
-                    "client_type": 1,
-                    "android_info": {
-                        "package_name": "com.wau.chat",
-                        "certificate_hash": "a286eed6ff5bf403f2fca483d56bdedb130e5748"
-                    }
-                },
-                {
-                    "client_id": "87242000984-u9e9nvsq2tfumksntvotrln76079v1el.apps.googleusercontent.com",
-                    "client_type": 3
-                }
-            ],
-            "api_key": [
-                {
-                    "current_key": "AIzaSyDb_vFAtU-7ulQGeQu9mJAxTTpIwEV77Fw"
-                },
-                {
-                    "current_key": "AIzaSyCtPgprkCaGk8lstL-Ug5zQEtZY8br43xk"
-                }
-            ],
-            "services": {
-                "analytics_service": {
-                    "status": 1
-                },
-                "appinvite_service": {
-                    "status": 2,
-                    "other_platform_oauth_client": [
-                        {
-                            "client_id": "87242000984-u9e9nvsq2tfumksntvotrln76079v1el.apps.googleusercontent.com",
-                            "client_type": 3
-                        }
-                    ]
-                },
-                "ads_service": {
-                    "status": 2
-                }
-            }
+  "project_info": {
+    "project_number": "87242000984",
+    "firebase_url": "https://wau-chat.firebaseio.com",
+    "project_id": "wau-chat",
+    "storage_bucket": "wau-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87242000984:android:c85e2a3702a47f77",
+        "android_client_info": {
+          "package_name": "com.wau.chat"
         }
-    ],
-    "configuration_version": "1"
+      },
+      "oauth_client": [
+        {
+          "client_id": "87242000984-rrbs39b27n0oufk343e3lebnfau896tm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wau.chat",
+            "certificate_hash": "a286eed6ff5bf403f2fca483d56bdedb130e5748"
+          }
+        },
+        {
+          "client_id": "87242000984-3fgs4la1tolav7epg1p7781l480vh6od.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wau.chat",
+            "certificate_hash": "a9db504a36668178eee9ebc6a1cad3815b3e1edd"
+          }
+        },
+        {
+          "client_id": "87242000984-reql5sgenef4p3fgu7h84npc7487p08j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wau.chat",
+            "certificate_hash": "c333ce57a48f5d1ebeeafd45b3df8e466a22f727"
+          }
+        },
+        {
+          "client_id": "87242000984-578adki1qlom4n834dgqrdm0d56oimnp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wau.chat",
+            "certificate_hash": "ac7f4d234b08920dec0b4c5d1cb58c5235163e10"
+          }
+        },
+        {
+          "client_id": "87242000984-u9e9nvsq2tfumksntvotrln76079v1el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb_vFAtU-7ulQGeQu9mJAxTTpIwEV77Fw"
+        },
+        {
+          "current_key": "AIzaSyCtPgprkCaGk8lstL-Ug5zQEtZY8br43xk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87242000984-u9e9nvsq2tfumksntvotrln76079v1el.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
 }
